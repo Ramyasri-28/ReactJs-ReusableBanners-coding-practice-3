@@ -1,0 +1,21 @@
+// Write your code here.
+import './index.css'
+
+const BannerSection = props => {
+  const {bannerList} = props
+  const {className, headerText, description} = bannerList
+
+  return (
+    <li className={`${className} banner-card`}>
+      <div>
+        <h1 className="heading"> {headerText} </h1>
+        <p className="description"> {description} </p>
+        <button className="button" type="button">
+          Show More
+        </button>
+      </div>
+    </li>
+  )
+}
+
+export default BannerSection
